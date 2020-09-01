@@ -2,5 +2,7 @@ from empath import Empath
 
 def categorize_words(sentences):
     lexicon = Empath()
+    counts_cats = []
     for s in sentences:
-        lexicon.analyze(s, normalize=True)
+        counts_cats.append(lexicon.analyze(s))
+    return counts_cats
