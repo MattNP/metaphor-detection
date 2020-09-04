@@ -42,7 +42,7 @@ def train_model():
     NUM_TOPICS = 100
     ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics = NUM_TOPICS, id2word=dictionary, passes=100)
     ldamodel.save('model5.gensim')
-    topics = ldamodel.print_topics(num_words=5)
+    topics = ldamodel.print_topics()
     for topic in topics:
         print(topic)
 

@@ -1,4 +1,5 @@
 import spacy
+spacy.load('en_core_web_sm')
 spacy.load('en')
 from spacy.lang.en import English
 parser = English()
